@@ -1,0 +1,134 @@
+body {
+    background: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 15px;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 11px;
+}
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+.col-sx-3, .col-sx-9{
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sx-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.col-sx-3 {
+    flex: 0 0 23%;
+    max-width: 23%;
+}
+.col-sx-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+.launch_year, .launch_success, .landing_success{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 35%;
+    max-width: 35%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #c4e197;
+    margin: 4px;
+    border-radius: 6px;
+    font-size: 14px;
+    TEXT-ALIGN: CENTER;
+    padding: 4px;
+    cursor: pointer;
+}
+.filterbox{
+    background-color:white;
+    padding: 14px;
+}
+.filterbox h4{
+    text-align: center;
+}
+.row.spaceXFilter {
+    margin: 15px 0 ;
+    justify-content: space-between;
+}
+h3 {
+    font-size: 16px;
+    margin: 9px 0 18px;
+    margin-bottom: 5px;
+    color: #7980B0;
+}
+h4 {
+    font-size: 12px;
+    
+}
+.spaceXFilter .active {
+    background: #79BB00;
+}
+.spaceXcontainer>div {
+    text-align: center;
+}
+.pic {
+    background: #F2F2F2;
+    margin-top: 12px;
+    padding: 2px;
+}
+.pic img{
+    background: #F2F2F2;
+    margin-top: 12px;
+    width: 98%;
+}
+.row.spaceXcontainer>div {
+    background: white;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin: 0 6px 22px;
+    border-radius: 13px;
+    padding-bottom: 20px;
+}
+p {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 8px 0;
+}
+p span{
+    font-weight: bold;
+    font-size: 12px;
+    color: #7980B0;
+    font-weight: 400;
+}
+.spaceXcontainer div.noresult {
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 7px;
+    padding-top: 17px
+}
+/* .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+} */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .noresult {
+        height: 91px;
+    }
+  }
