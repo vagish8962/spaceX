@@ -9,25 +9,30 @@ const getData = (t, e) => {
     if ( url ) {
         filter =   Object.fromEntries(new URLSearchParams(url.split("?")[1]));
         delete filter.limit;
-        // for (let key in filter) {
-        //     tags = document.querySelectorAll('.'+key);
-        //     for (i = 0; i < tags.length; i++){
-        //         sections[i].classList.remove('active'); 
-        //     }
-        // }
+        for (const [key, value] of Object.entries(filter)) {
+    
+            let sections =  document.querySelectorAll(`.${key}`);
+            for (i = 0; i < sections.length; i++){
+                if ( value === sections[i].innerHTML.toLowerCase() ) {
+                    sections[i].setAttribute('data-active', 'active');
+                }
+            }
+        }
+       
     }
     // Get Div text
     if (e.target.innerHTML) {
         filter[e.target.className] =  e.target.innerHTML.toLowerCase();
         
         if (filter.hasOwnProperty(e.target.className))  {
+
             let sections =  document.querySelectorAll(`.${e.target.className}`);
             for (i = 0; i < sections.length; i++){
-                sections[i].classList.remove('active'); 
+                sections[i].removeAttribute('data-active');
             }
-            e.target.classList.add('active');
+            e.target.setAttribute('data-active', 'active');
         } else {
-            e.target.classList.add('active');
+            e.target.removeAttribute('data-active');
         }
     }
 
