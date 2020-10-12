@@ -75,7 +75,7 @@ h4 {
     font-size: 12px;
     
 }
-.spaceXFilter .active {
+.spaceXFilter div[data-active="active"] {
     background: #79BB00;
 }
 .spaceXcontainer>div {
