@@ -148,15 +148,6 @@ p span{
 }
 
 
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -168,6 +159,9 @@ p span{
     }
     .noresult {
         height: 91px;
+    }
+    .spaceXcontainer {
+        margin-top: 10px;
     }
   }
 
