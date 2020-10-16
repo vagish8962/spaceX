@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpacerX</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>SpaceX Launch Program</h1>
         <div class="row">
-            <div class="col-sx-2 filterbox col">
-                <h3>Filters</h3>
+            <aside class="col-sx-2 filterbox col">
+               
                 <div class="filter">
+                    <h3>Filters</h3>
                     <h4> Launch Year </h4>
                     <hr />
                     <div class="row spaceXFilter">
@@ -42,19 +43,19 @@
                     <h4> Successfully Landing </h4>
                     <hr />
                     <div class="row spaceXFilter">
-                        <div class="landing_success">True</div>
-                        <div class="landing_success">False</div>
+                        <div class="land_success">True</div>
+                        <div class="land_success">False</div>
                     </div>
                 </div>
-            </div>
+            </aside>
             <div class="col-sx-10 col">
                 <div class="row spaceXcontainer">
                 </div>
             </div>
         </div>
     </div>
-    <script src="./src/services.js"></script>
-    <script src="./src/UI.js"></script>
-    <script src="./src/app.js"></script>
+    <script src="services.js"></script>
+    <script src="UI.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
