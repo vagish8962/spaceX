@@ -7,7 +7,7 @@ function Services () {
         const spaceXResponse = await fetch(url);
 
         const spaceXdata = await spaceXResponse.json();
-        localStorage.setItem('surl', url);
+        localStorage.setItem('spaceurl', url);
         document.getElementById('load').style.display="none";
         return {
             spaceXdata
