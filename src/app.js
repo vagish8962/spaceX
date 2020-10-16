@@ -5,7 +5,7 @@ const ui = new UI();
 let filter = {};
 
 const getData = (t, e) => {
-    const url = localStorage.getItem('url');
+    const url = localStorage.getItem('spaceurl');
     if ( url ) {
         filter =   Object.fromEntries(new URLSearchParams(url.split("?")[1]));
         delete filter.limit;
