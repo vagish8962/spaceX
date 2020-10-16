@@ -41,7 +41,7 @@ const getData = (t, e) => {
     services.getData(filter, t)
         .then( data => {
             // Decorating in UI
-            ui.showSpaceX(data);
+            ui.showSpaceX(data, filter);
         })
 };
 
